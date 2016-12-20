@@ -329,6 +329,11 @@ $theme.include($top_messages_include)
     /* ]]> */
 </script>
 
+<script type="text/javascript">
+    var loop11_key = "cdec47dd331e81c8ff66148dd1f84a5d48d43e82";
+    document.write(unescape("%3cscript src='//cdn.loop11.com/my/loop11.js' type='text/javascript'%3e%3c/script%3e"));
+</script>
+
 #if ($request.getSession().getAttribute('collab_user_has_registered'))
     <script type="text/javascript">
 // disabled in test env
