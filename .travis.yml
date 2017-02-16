@@ -9,4 +9,5 @@ services:
 before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS xcolab;'
   - sh $TRAVIS_BUILD_DIR/scripts/travis/before_script.sh
-
+install:
+  - sh $TRAVIS_BUILD_DIR/buildAll.sh
