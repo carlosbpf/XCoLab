@@ -1,5 +1,6 @@
+#!/bin/bash
 # Run Mysql Create Script
-mysql -u travis -p xcolab < xcolab_Create.sql
+mysql -u travis -p xcolab < $TRAVIS_BUILD_DIR/scripts/travis/xcolab_Create.sql
 
 #Roma client install
 cd $TRAVIS_BUILD_DIR
