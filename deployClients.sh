@@ -42,7 +42,6 @@ cd ../../..
 
 echo "#####################################################################################"
 echo "Deploying clients"
-echo " "
 cd microservices/clients
 for D in *-client; do
     if [ -d "${D}" ]; then

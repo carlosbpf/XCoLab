@@ -12,7 +12,6 @@ cd ../../..
 
 echo "#####################################################################################"
 echo "Deploying services"
-echo ""
 cd microservices/services
 for D in *-service; do
     if [ -d "${D}" ]; then
