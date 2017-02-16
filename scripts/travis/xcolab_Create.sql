@@ -330,8 +330,8 @@ CREATE TABLE `members_Member` (
   KEY `IX_XCOLAB_MEMBERS_CREATE_DATE` (`createDate`,`modifiedDate`),
   KEY `IX_XCOLAB_MEMBERS_MODIFIED_DATE` (`modifiedDate`),
   KEY `IX_XCOLAB_MEMBERS_FACEBOOK_ID` (`facebookId`),
-  KEY `IX_XCOLAB_MEMBERS_OPEN_ID` (`openId`),
-  FULLTEXT KEY `members_Member_names_bio` (`firstName`,`lastName`,`shortBio`,`screenName`)
+  KEY `IX_XCOLAB_MEMBERS_OPEN_ID` (`openId`)
+  /*, FULLTEXT KEY `members_Member_names_bio` (`firstName`,`lastName`,`shortBio`,`screenName`)*/
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 CREATE TABLE `xcolab_ProposalVersion` (
@@ -976,8 +976,9 @@ CREATE TABLE `xcolab_ProposalAttribute` (
   KEY `IX_8FF24CAD` (`proposalId`,`version`),
   KEY `IX_F4926C2` (`proposalId`,`version`,`name`,`additionalId`),
   KEY `IX_4941177` (`proposalId`,`version`,`versionWhenCreated`),
-  KEY `IX_F612A28C` (`proposalId`,`version`,`versionWhenCreated`,`name`,`additionalId`),
-  FULLTEXT KEY `stringValue_ProposalAtribute` (`stringValue`)
+  KEY `IX_F612A28C` (`proposalId`,`version`,`versionWhenCreated`,`name`,`additionalId`)
+  /*,
+  FULLTEXT KEY `stringValue_ProposalAtribute` (`stringValue`)*/
 ) ENGINE=InnoDB AUTO_INCREMENT=387726 DEFAULT CHARSET=utf8;
 
 CREATE TABLE `xcolab_ProposalUnversionedAttribute` (
@@ -1161,8 +1162,8 @@ CREATE TABLE `comment_Comment` (
   `content` text,
   PRIMARY KEY (`commentId`),
   KEY `comment_Comment__threadId` (`threadId`,`createDate`),
-  KEY `comment_Comment__authorId` (`authorId`),
-  FULLTEXT KEY `content_comment_Comment` (`content`)
+  KEY `comment_Comment__authorId` (`authorId`)/*,
+  FULLTEXT KEY `content_comment_Comment` (`content`)*/
 ) ENGINE=InnoDB AUTO_INCREMENT=1363204 DEFAULT CHARSET=utf8;
 
 CREATE TABLE `Users_Roles` (
@@ -1243,8 +1244,8 @@ CREATE TABLE `xcolab_Contest` (
   KEY `IX_33496233` (`contestActive`,`flag`,`contestTypeId`),
   KEY `IX_168D6722` (`contestTier`),
   KEY `IX_58A2B737` (`contestTier`,`contestTypeId`),
-  KEY `IX_95122F5` (`contestTypeId`),
-  FULLTEXT KEY `ContestDescription_xcolab_Contest` (`ContestDescription`)
+  KEY `IX_95122F5` (`contestTypeId`)/*,
+  FULLTEXT KEY `ContestDescription_xcolab_Contest` (`ContestDescription`)*/
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 CREATE TABLE `xcolab_PlanTemplateSection` (
