@@ -21,4 +21,4 @@ deploy:
   bucket: "colabbucket"
   key: ColabBinaries
   skip_cleanup: true
-  upload-dir: $HOME/$TRAVIS_ACOUNT_LOGIN/deploy
+  upload-dir: $TRAVIS_BUILD_DIR/deploy
