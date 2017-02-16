@@ -8,5 +8,5 @@ services:
   - mysql
 before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS xcolab;'
-before_script: /script/travis/before_script.sh
+  - sh script/travis/before_script.sh
 
