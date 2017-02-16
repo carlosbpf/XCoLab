@@ -1,3 +1,4 @@
+SET FOREIGN_KEY_CHECKS = 0;
 CREATE TABLE `activities_ActivityEntry` (
   `activityEntryId` bigint(20) NOT NULL AUTO_INCREMENT,
   `memberId` bigint(20) DEFAULT NULL,
@@ -1320,3 +1321,4 @@ CREATE TABLE `xcolab_ContentFolder` (
   PRIMARY KEY (`contentFolderId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
+SET FOREIGN_KEY_CHECKS = 1
