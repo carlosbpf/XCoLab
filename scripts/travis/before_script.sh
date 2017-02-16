@@ -7,5 +7,5 @@ cp $TRAVIS_BUILD_DIR/microservices/services/src/main/resources/application.prope
 echo "Copying application properties file"
 mkdir $TRAVIS_BUILD_DIR/../deploy
 touch $HOME/.xcolab.deploy.properties
-cat "liferay.auto.deploy.dir=$TRAVIS_BUILD_DIR/../deploy" > $HOME/.xcolab.deploy.properties
+echo "liferay.auto.deploy.dir=$TRAVIS_BUILD_DIR/../deploy" > $HOME/.xcolab.deploy.properties
 tail $HOME/.xcolab.deploy.properties
