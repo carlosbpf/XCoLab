@@ -13,12 +13,12 @@ install : true
 script:
   - sh $TRAVIS_BUILD_DIR/scripts/travis/deploy.sh
 after_success:
-  - ls $HOME/$TRAVIS_ACOUNT_LOGIN/deploy/
+  - ls $TRAVIS_BUILD_DIR/deploy/
 deploy:
   provider: s3
   access_key_id: "$AWS_KEY_ID"
   secret_access_key: "$AWS_PASSWORD"
   bucket: "colabbucket"
-  key: ColabBinaries
+  key: "ColabBinaries"
   skip_cleanup: true
-  upload-dir: $TRAVIS_BUILD_DIR/deploy
+  upload-dir: "$TRAVIS_BUILD_DIR/deploy"
