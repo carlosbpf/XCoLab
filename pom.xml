@@ -23,13 +23,13 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-		<repository>
+		<!-- <repository>
 			<id>XCoLab-repo</id>
 			<url>https://raw.github.com/CCI-MIT/XCoLab/mvn-repo/</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
-		</repository>
+		</repository> -->
 		<repository>
 			<id>ibiblio</id>
 			<url>http://mirrors.ibiblio.org/maven2/</url>
