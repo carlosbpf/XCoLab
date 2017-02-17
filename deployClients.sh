@@ -5,7 +5,8 @@ set -e
 echo "#####################################################################################"
 echo "Deploying parent dependencies"
 echo "#####################################################################################"
-LOG="-q -B"
+LOG=""
+#-q -B
 mvn install -N $LOG
 cd microservices/
 mvn install -N $LOG
