@@ -33,8 +33,7 @@ deploy:
     key: ColabBinaries
     skip_cleanup: true
     local-dir: $TRAVIS_BUILD_DIR/deploy
-  - deploy:
-    provider: script
+  - provider: script
     skip_cleanup: true
     script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/deploy travis@cognosis.mit.edu:path/to/files
     on:
