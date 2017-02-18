@@ -1,6 +1,6 @@
 #!/bin/bash
 # Run Mysql Create Script
-export MAVEN_OPTS="-Xmx1024m"
+echo "MAVEN_OPTS='-Xmx1536m'" > ~/.mavenrc
 echo "Running create database script"
 mysql -u root xcolab < $TRAVIS_BUILD_DIR/scripts/travis/xcolab_Create.sql
 echo "Copying application properties file"
