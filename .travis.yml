@@ -17,6 +17,8 @@ before_install:
 - ssh-add deploy_rsa
 - mysql -e 'CREATE DATABASE IF NOT EXISTS xcolab;'
 - sh $TRAVIS_BUILD_DIR/scripts/travis/before_script.sh
+addons:
+  ssh_known_hosts: cognosis.mit.edu
 install: true
 script:
 - sh $TRAVIS_BUILD_DIR/scripts/travis/deploy.sh
