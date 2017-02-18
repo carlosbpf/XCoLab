@@ -16,7 +16,7 @@ install : true
 script:
   - sh $TRAVIS_BUILD_DIR/scripts/travis/deploy.sh
 after_success:
-  - sh $TRAVIS_BUILD_DIR/scripts/travis/before_script.sh
+  - sh $TRAVIS_BUILD_DIR/scripts/travis/after_script.sh
   - ls $TRAVIS_BUILD_DIR/deploy/
 deploy:
   provider: s3

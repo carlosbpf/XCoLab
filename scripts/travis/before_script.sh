@@ -1,6 +1,6 @@
 #!/bin/bash
 # Run Mysql Create Script
-TRAVIS_ACOUNT_LOGIN=carlosbpf
+export MAVEN_OPTS="-Xmx1024m"
 echo "Running create database script"
 mysql -u root xcolab < $TRAVIS_BUILD_DIR/scripts/travis/xcolab_Create.sql
 echo "Copying application properties file"
