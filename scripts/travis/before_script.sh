@@ -11,5 +11,5 @@ mkdir $TRAVIS_BUILD_DIR/deploy/apache-tomcat-8.0.33/webapps
 mkdir $TRAVIS_BUILD_DIR/deploy/view
 mkdir $TRAVIS_BUILD_DIR/deploy/webapps
 touch $HOME/.xcolab.deploy.properties
-echo "liferay.auto.deploy.dir=$TRAVIS_BUILD_DIR/deploy" > $HOME/.xcolab.deploy.properties
+echo "liferay.auto.deploy.dir=$TRAVIS_BUILD_DIR/deploy/webapps" > $HOME/.xcolab.deploy.properties
 tail $HOME/.xcolab.deploy.properties
