@@ -2,7 +2,7 @@
 
 # stop script if any build fails
 set -e
-LOG="-q -B"
+LOG="-q -B -Dsurefire.printSummary=false"
 echo "#####################################################################################"
 echo "Deploying service-utils"
 echo "#####################################################################################"

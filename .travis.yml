@@ -35,6 +35,6 @@ deploy:
     local-dir: $TRAVIS_BUILD_DIR/deploy
   - provider: script
     skip_cleanup: true
-    script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/deploy travis@cognosis.mit.edu:path/to/files
+    script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/deploy travis@cognosis.mit.edu:deploy
     on:
       branch: master
